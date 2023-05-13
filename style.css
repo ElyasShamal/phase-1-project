@@ -28,3 +28,32 @@ li{
     padding-top: 18px;
 }
 
+.main-gif{
+    background-image: url('https://i.pinimg.com/originals/d7/ca/ae/d7caae08063392f75323e4f8feb8cfc6.gif');
+    background-size: cover;
+    height: 600px;
+    z-index: 1;
+}
+
+form{
+    position: absolute;
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    top: 60px;
+    left: 250px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+label{
+    padding-left: 30px;
+}
+
+.input-1{
+    margin-top: 30px;
+}
+
+.input-2{
+    margin-top: 20px;
+}
