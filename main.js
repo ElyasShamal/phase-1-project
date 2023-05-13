@@ -2,18 +2,18 @@
 fetch("http://localhost:3000/inventory")
 .then(response => response.json())
 .then(data =>{
-    const image = [];
-    data.forEach(availabel => {
-        image.push(availabel.image);
+    const images = [];
+    data.forEach(inventory => {
+        images.push(inventory.image);
         
     });
 
     const sliderText = [];
-    data.forEach(availabel =>{
+    data.forEach(inventory =>{
         sliderText.push({
-            name: availabel.name,
-            description:availabel.description,
-            addtocard: availabel.addtocard,
+            name: inventory.name,
+            description:inventory.description,
+            addtocard: inventory.addtocard,
         
         });
     });
@@ -25,7 +25,7 @@ fetch("http://localhost:3000/inventory")
     slider.innerHTML = '';
     // create img and added to slider
     const img = document.createElement('img');
-    img.src = image[sliderIndex];
+    img.src = images[sliderIndex];
     slider.appendChild(img);
     //create sliderTexElem
     const sliderTexElem = document.createElement('div');
