@@ -15,8 +15,18 @@ function createItem(item){
     //create h3 for heading 
     let h3 = document.createElement('h3');
     h3.textContent = item.name;
+    // create a paragragh for item description
+    let p = document.createElement('p')
+    p.textContent = item.description;
+    // create buyButton 
+    let buyButton = document.createElement('button');
+    buyButton.textContent = item.addtocard;
+    buyButton.classList.add("buy-btn");
 
 
+
+    inventory.append(img, h3, p, buyButton)
+    document.getElementById('availabel-items').appendChild(inventory)
 
 }
 
