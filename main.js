@@ -19,4 +19,16 @@ fetch("http://localhost:3000/inventory")
     });
 
     let sliderIndex = 0;
+
+ function updateSlider() {
+    const slider = document.getElementById('slider');
+    slider.innerHTML = '';
+
+    const img = document.createElement('img');
+    img.src = image[sliderIndex]
+
+ }  
+
+ updateSlider()
 })
+
