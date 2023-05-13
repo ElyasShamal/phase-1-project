@@ -50,5 +50,7 @@ fetch("http://localhost:3000/inventory")
  }  
 
  updateSlider()
+
+ // create an interval to update the slider every 10 seconds
 })
 

@@ -91,3 +91,43 @@ textarea{
     left: 82px;
 }
 
+#slider{
+    width: 250px;
+    height: 415px;
+    position: absolute;
+    overflow: hidden;
+    right: 20px;
+    top: 260px;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+
+#slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.6);
+    color: #fff;
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+}
+
+.slider-test h3{
+    margin: 0;
+    font-size: 24px;
+}
+
+.slider-test p{
+    margin: 5px 0 0;
+    font-size: 18px;
+    /* font-size: 18px;    */
+}
+
