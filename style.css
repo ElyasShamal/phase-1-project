@@ -77,3 +77,17 @@ label{
     max-width: 100%;
 }
 
+.input-3{
+    position: relative;
+    left: 80px;
+    padding: 5px 65px;
+    background-color: brown;
+    color: white;
+}
+
+textarea{
+    margin-top: 20px;
+    position: relative;
+    left: 82px;
+}
+
