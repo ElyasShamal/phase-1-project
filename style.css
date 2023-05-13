@@ -131,3 +131,43 @@ textarea{
     /* font-size: 18px;    */
 }
 
+#button-card{
+    position: relative;
+    margin-top: 20px;
+  }
+
+#availabel-items{
+    margin: 2rem;
+}
+
+.inventory{
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 17rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px brown;
+}
+
+.img-inventory{
+    justify-self: center;
+    height: 12rem;
+    width: 250px;
+    padding-right: 10px;
+}
+
+
+.buy-btn{
+    position: relative;
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+    height: 3rem;
+    width: max-content;
+    color: whitesmoke;
+    font-size: 18px;
+    justify-self: center;
+    padding: 0px 20px;
+}
