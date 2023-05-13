@@ -1,0 +1,26 @@
+
+{
+    "inventory": [
+        {
+            "id": 1,
+             "image":"https://m.media-amazon.com/images/I/71nbxUhnoxL._AC_UX569_.jpg",
+             "name": "SweatShirts      15$",
+             "description":"Yasswete Unisex Adults 3D Printed Fashion Hoodies for Men Women",
+             "addtocard": "Add to card"
+        },
+        {
+            "id": 2,
+            "image": "https://m.media-amazon.com/images/I/61AN6pw63hL._AC_UX679_.jpg",
+            "name": "Mask",
+            "description":"Christmas Cosplay Mask and Gloves, Christmas Costume Latex Mask and Gloves Cosplay Costume Accessories for Adult and Kids",
+            "addtocard": "Add to card"
+        },
+        {
+            "id": 3,
+            "image":"https://m.media-amazon.com/images/I/71AvbNe2ZcL._AC_SX569._SX._UX._SY._UY_.jpg",
+            "name": "T-Shirt",
+            "description": "The Children's Place Baby Toddler Girls Short Sleeve Graphic T-Shirt",
+            "addtocard": "Add to card"
+        }
+    ]
+}
