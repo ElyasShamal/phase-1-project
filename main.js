@@ -52,5 +52,13 @@ fetch("http://localhost:3000/inventory")
  updateSlider()
 
  // create an interval to update the slider every 10 seconds
+  setInterval(() => {
+    sliderIndex++;
+    if(sliderIndex === images.length) {
+        sliderIndex = 0;
+    }
+    updateSlider()
+  }, 5000);
 })
+.catch(error => console.error(error));
 
