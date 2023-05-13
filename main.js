@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', () => {
+    fetch("http://localhost:3000/inventory")
+    .then( response => response.json())
+    .then(availabelItem => availabelItem.forEach(item => createItem(item)));
+})
+
+function createItem(item){
+    //create a div with class name
+    let inventory = document.createElement('div');
+    inventory.classList.add('inventory');
+    //  create image with class name
+    let img = document.createElement('img');
+    img.classList.add('img-inventory');
+    img.src = item.image;
+    //create h3 for heading 
+    let h3 = document.createElement('h3');
+    h3.textContent = item.name;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 fetch("http://localhost:3000/inventory")
 .then(response => response.json())
