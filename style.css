@@ -57,3 +57,23 @@ label{
 .input-2{
     margin-top: 20px;
 }
+
+#btn{
+    position: relative;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: brown;
+    color: white;
+}
+
+#btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.search{
+    margin-top: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+
