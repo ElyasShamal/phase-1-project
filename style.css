@@ -186,7 +186,7 @@ textarea{
     left: 150px;
 }
 
-.cartImg{
+.cartImage{
     position: absolute;
     top: 20px;
     width: 100px;
@@ -195,3 +195,14 @@ textarea{
     margin-left: 20px;
 }
 
+.remove{
+    position: relative;
+    left: 280px;
+    top: 20px;
+    color: white;
+    background-color: brown;
+    border-radius: 5px;
+    height: 2rem;
+    padding:0px 20px;
+    border-radius: 2px solid brown;
+}
