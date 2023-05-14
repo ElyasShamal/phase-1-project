@@ -39,11 +39,20 @@ function createItem(item){
     buyButton.textContent = item.addtocard;
     buyButton.classList.add("buy-btn");
 
-    // create add eventlisner for buyButton the create a div inside the shopping
-    //  create another button that user can remove the item from shopping cart   
     buyButton.addEventListener('click', () => {
-        let shoppingDiv = document.createElement('div');
-        shoppingDiv.classList.add('shoppingDiv')
+    let shoppingDiv = document.createElement('div');
+    shoppingDiv.classList.add('shoppingDiv')
+    // create newimage for cart
+    let newimage = document.createElement('img');
+    newimage.classList.add('cartImage')
+    newimage.src = item.image
+
+    // create new H3 for item name
+    let newH3 = document.createElement('h3');
+    newH3.classList.add('newH3')
+    newH3.textContent = item.name;
+    
+
         
     })
     
