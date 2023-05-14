@@ -39,6 +39,15 @@ function createItem(item){
     buyButton.textContent = item.addtocard;
     buyButton.classList.add("buy-btn");
 
+    // create add eventlisner for buyButton the create a div inside the shopping
+    //  create another button that user can remove the item from shopping cart   
+    buyButton.addEventListener('click', () => {
+        let shoppingDiv = document.createElement('div');
+        shoppingDiv.classList.add('shoppingDiv')
+        
+    })
+    
+
 
 
     inventory.append(img, h3, p, buyButton)
@@ -51,7 +60,7 @@ function sentItout(newItem){
 
     method: 'POST',
     headers:{
-        'content-type': 'appication/json';
+        'content-type': 'appication/json',
         Accept: 'application/json',
     },
     body: JSON.stringify({
