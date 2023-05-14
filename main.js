@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let lisButton = document.getElementById('btn');
       lisButton.addEventListener('click', () => {
     let form = document.getElementById('form')
-      form.style.visibility = 'visible';
+        form.style.visibility = 'visible';
       // create another event for form data
     form.addEventListener('submit', (e) => {
        e.preventDefault();
@@ -58,11 +58,15 @@ function createItem(item){
         remove.classList.add('remove');
         remove.textContent = "Remove";
 
+        remove.addEventListener('click', ()=>{
+        shoppingDiv.style.display = 'none';
+        })
+        
+        shoppingDiv.append(newimage,newH3,remove)
+        document.getElementById('shopping').appendChild(shoppingDiv)
+
         
     })
-    
-
-
 
     inventory.append(img, h3, p, buyButton)
     document.getElementById('availabel-items').appendChild(inventory)
