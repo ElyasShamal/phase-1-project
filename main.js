@@ -1,7 +1,28 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch("http://localhost:3000/inventory")
     .then( response => response.json())
     .then(availabelItem => availabelItem.forEach(item => createItem(item)));
+
+    let lisButton = document.getElementById('btn');
+    lisButton.addEventListener('click', () => {
+    let form = document.getElementById('form')
+    form.style.visibility = 'visible';
+    
+    form.addEventListener('submit', (e) => {
+     e.preventDefault();
+     let formData = Object.fromEntries(new FormData(e.target));
+     form.style.display = 'none';
+     
+     sentItout(formData);
+
+    })
+
+
+
+    })
+
+
 })
 
 function createItem(item){
