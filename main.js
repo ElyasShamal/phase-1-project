@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch("http://localhost:3000/inventory")
     .then( response => response.json())
     .then(availabelItem => availabelItem.forEach(item => createItem(item)));
-
+    // add addEventlistener for btn to open the form
     let lisButton = document.getElementById('btn');
     lisButton.addEventListener('click', () => {
     let form = document.getElementById('form')
     form.style.visibility = 'visible';
-    
+    // create another event for form data
     form.addEventListener('submit', (e) => {
      e.preventDefault();
      let formData = Object.fromEntries(new FormData(e.target));
@@ -17,12 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
      sentItout(formData);
 
     })
-
-
-
     })
-
-
 })
 
 function createItem(item){
@@ -51,7 +46,23 @@ function createItem(item){
 
 }
 
+function sentItout(newItem){
+    fetch('http://localhost:3000/inventory',{
 
+    method: 'POST',
+    headers:{
+        'content-type': 'appication/json';
+        Accept: 'application/json',
+    },
+    body: JSON.stringify({
+        ...newItem,
+        'addtocard':'Add to card',
+    })
+    }).then(
+        (response) => response.json(),
+    )
+    .then(responseItem => createItem(responseItem))
+}
 
 
 
