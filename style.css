@@ -119,15 +119,14 @@ textarea{
     padding: 10px;
 }
 
-.slider-test h3{
-    margin: 0;
+.slider-text h3{
+    margin: 0px;
     font-size: 24px;
 }
 
-.slider-test p{
+.slider-text p {
     margin: 5px 0 0;
     font-size: 18px;
-    /* font-size: 18px;    */
 }
 
 #button-card{
@@ -144,9 +143,9 @@ textarea{
     border: grey solid 1px;
     padding: 1rem;
     width: 17rem;
-    height: 25rem;
+    height: 24rem;
     display: inline-grid;
-    margin: 1rem 2rem;
+    margin: 1rem 2.8rem;
     box-shadow: 3px 4px brown;
 }
 
