@@ -6,7 +6,7 @@ Installation
 
 Clone this repository 
 
-Mac: open index.html
+Mac: open index.html                                                                                                                                                        
 Windows: explorer.exe index.html
 
 
