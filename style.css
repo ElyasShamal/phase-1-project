@@ -61,7 +61,7 @@ label{
 #btn{
     position: relative;
     padding: 5px 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: brown;
     color: white;
 }
